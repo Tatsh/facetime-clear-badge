@@ -7,12 +7,12 @@
     "facetime-clear-badge": "./dist/facetime-clear-badge.js"
   },
   "bugs": {
-    "email": "bugs@udva.re",
     "url": "https://github.com/Tatsh/facetime-clear-badge/issues"
   },
   "description": "Clear the FaceTime.app badge.",
   "devDependencies": {
-    "typescript": "^3.7.2"
+    "prettier": "^2.1.2",
+    "typescript": "^4.5.5"
   },
   "homepage": "https://github.com/Tatsh/facetime-clear-badge",
   "keywords": [
@@ -31,7 +31,7 @@
     "url": "git+ssh://git@github.com/Tatsh/facetime-clear-badge.git"
   },
   "scripts": {
-    "build": "tsc && chmod +x ./dist/facetime-clear-badge.js",
+    "build": "tsc && prettier -w ./dist/facetime-clear-badge.js && chmod +x ./dist/facetime-clear-badge.js",
     "run": "./dist/facetime-clear-badge.js"
   },
   "version": "0.0.1"
