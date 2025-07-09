@@ -1,38 +1,120 @@
 {
-  "author": {
-    "email": "bugs@udva.re",
-    "name": "Andrew Udvare"
+  "bin": "./dist/index.js",
+  "contributors": ["Andrew Udvare <audvare@gmail.com>"],
+  "cspell": {
+    "cache": {
+      "useCache": true
+    },
+    "dictionaryDefinitions": [
+      {
+        "name": "main",
+        "path": ".vscode/dictionary.txt"
+      }
+    ],
+    "enableFileTypes": {
+      "*": true
+    },
+    "enableGlobDot": true,
+    "files": ["*"],
+    "ignorePaths": [
+      "*.1",
+      "*.har",
+      "*.lock",
+      ".git/**",
+      ".yarn/**/*.cjs",
+      ".vscode/extensions.json",
+      "dist/**",
+      "man/**"
+    ],
+    "language": "en-GB",
+    "languageSettings": [
+      {
+        "dictionaries": ["main"],
+        "languageId": "*"
+      }
+    ],
+    "useGitignore": true
   },
-  "bin": {
-    "facetime-clear-badge": "./dist/facetime-clear-badge.js"
+  "dependencies": {
+    "jxa-lib": "^0.1.7"
   },
-  "bugs": {
-    "url": "https://github.com/Tatsh/facetime-clear-badge/issues"
-  },
-  "description": "Clear the FaceTime.app badge.",
+  "description": "Utility to clear the FaceTime.app badge.",
   "devDependencies": {
-    "prettier": "^2.1.2",
-    "typescript": "^4.5.5"
+    "@eslint/js": "^9.30.1",
+    "@prettier/plugin-xml": "^3.4.2",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.10",
+    "cspell": "^9.1.3",
+    "eslint": "^9.30.1",
+    "jest": "^30.0.4",
+    "jxa-types": "^0.0.6",
+    "markdownlint-cli2": "^0.18.1",
+    "prettier": "^3.6.2",
+    "prettier-plugin-ini": "^1.3.0",
+    "prettier-plugin-sort-json": "^4.1.1",
+    "prettier-plugin-toml": "^2.0.5",
+    "ts-jest": "^29.4.0",
+    "ts-loader": "^9.5.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.36.0",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
+    "webpack-shebang-plugin": "^1.1.8",
+    "yarn-audit-fix": "^10.1.1"
   },
-  "homepage": "https://github.com/Tatsh/facetime-clear-badge",
-  "keywords": [
-    "applescript",
-    "facetime",
-    "jxa",
-    "osascript"
-  ],
+  "files": ["LICENSE.txt", "README.md", "dist/index.js", "dist/index.js.map"],
+  "homepage": "https://tatsh.github.io/facetime-clear-badge/",
+  "keywords": ["applescript", "facetime", "jxa", "macos", "notifications", "typescript"],
   "license": "MIT",
+  "main": "dist/index.js",
+  "markdownlint-cli2": {
+    "config": {
+      "MD033": {
+        "allowed_elements": ["kbd"]
+      },
+      "default": true,
+      "line-length": {
+        "code_blocks": false,
+        "line_length": 100,
+        "tables": false
+      }
+    }
+  },
   "name": "facetime-clear-badge",
-  "os": [
-    "darwin"
-  ],
+  "packageManager": "yarn@4.9.2",
+  "prettier": {
+    "endOfLine": "lf",
+    "iniSpaceAroundEquals": true,
+    "jsonRecursiveSort": true,
+    "overrides": [
+      {
+        "files": ["package.json"],
+        "options": {
+          "parser": "json"
+        }
+      }
+    ],
+    "plugins": [
+      "@prettier/plugin-xml",
+      "prettier-plugin-ini",
+      "prettier-plugin-sort-json",
+      "prettier-plugin-toml"
+    ],
+    "printWidth": 100,
+    "reorderKeys": true,
+    "singleQuote": true
+  },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/Tatsh/facetime-clear-badge.git"
+    "url": "git@github.com:Tatsh/facetime-clear-badge.git"
   },
   "scripts": {
-    "build": "tsc && prettier -w ./dist/facetime-clear-badge.js && chmod +x ./dist/facetime-clear-badge.js",
-    "run": "./dist/facetime-clear-badge.js"
+    "check-formatting": "yarn prettier -c . && yarn markdownlint-cli2 '**/*.md' '#node_modules'",
+    "check-spelling": "yarn cspell --no-progress './**/*'  './**/.*'",
+    "format": "prettier -w . && yarn markdownlint-cli2 --fix '**/*.md' '#node_modules'",
+    "qa": "yarn eslint && yarn check-spelling && yarn check-formatting",
+    "test": "jest"
   },
   "version": "0.0.1"
 }
