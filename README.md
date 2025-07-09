@@ -1,5 +1,6 @@
 # facetime-clear-badge
 
+[![NPM Version](https://img.shields.io/npm/v/facetime-clear-badge)](https://www.npmjs.com/package/facetime-clear-badge)
 [![GitHub tag (with filter)](https://img.shields.io/github/v/tag/Tatsh/facetime-clear-badge)](https://github.com/Tatsh/facetime-clear-badge/tags)
 [![License](https://img.shields.io/github/license/Tatsh/facetime-clear-badge)](https://github.com/Tatsh/facetime-clear-badge/blob/master/LICENSE.txt)
 [![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/Tatsh/facetime-clear-badge/v0.0.2/master)](https://github.com/Tatsh/facetime-clear-badge/compare/v0.0.2...master)
@@ -10,6 +11,7 @@
 [![GitHub Pages](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/pages/pages-build-deployment/badge.svg)](https://tatsh.github.io/facetime-clear-badge/)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
 [![Stargazers](https://img.shields.io/github/stars/Tatsh/facetime-clear-badge?logo=github&style=flat)](https://github.com/Tatsh/facetime-clear-badge/stargazers)
+[![NPM Downloads](https://img.shields.io/npm/dm/facetime-clear-badge)](https://www.npmjs.com/package/facetime-clear-badge)
 
 [![@Tatsh](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fpublic.api.bsky.app%2Fxrpc%2Fapp.bsky.actor.getProfile%2F%3Factor%3Ddid%3Aplc%3Auq42idtvuccnmtl57nsucz72%26query%3D%24.followersCount%26style%3Dsocial%26logo%3Dbluesky%26label%3DFollow%2520%40Tatsh&query=%24.followersCount&style=social&logo=bluesky&label=Follow%20%40Tatsh)](https://bsky.app/profile/Tatsh.bsky.social)
 [![Mastodon Follow](https://img.shields.io/mastodon/follow/109370961877277568?domain=hostux.social&style=social)](https://hostux.social/@Tatsh)
