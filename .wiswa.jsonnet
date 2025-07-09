@@ -16,7 +16,7 @@
     },
   ],
   project_name: 'facetime-clear-badge',
-  version: '0.0.1',
+  version: '0.0.2',
   description: 'Utility to clear the FaceTime.app badge.',
   keywords: ['applescript', 'facetime', 'jxa', 'macos', 'notifications', 'typescript'],
   copilot: {
