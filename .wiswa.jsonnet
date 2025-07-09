@@ -38,9 +38,9 @@
   // TypeScript only
   package_json+: {
     bin: './dist/index.js',
-    dependencies+: { 'jxa-lib': '^0.1.7' },
     devDependencies+: {
       '@types/node': '^24.0.10',
+      'jxa-lib': '^0.1.7',
       'jxa-types': '^0.0.6',
       'ts-loader': '^9.5.2',
       'webpack-cli': '^6.0.1',
