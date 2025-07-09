@@ -3,6 +3,7 @@
   // General settings
   project_type: 'typescript',
   keep_dist: true,
+  want_man: true,
 
   // Shared
   github_username: 'Tatsh',
@@ -16,7 +17,7 @@
     },
   ],
   project_name: 'facetime-clear-badge',
-  version: '0.0.3',
+  version: '0.0.4',
   description: 'Utility to clear the FaceTime.app badge.',
   keywords: ['applescript', 'facetime', 'jxa', 'macos', 'notifications', 'typescript'],
   copilot: {

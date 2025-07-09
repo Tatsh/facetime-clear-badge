@@ -1,0 +1,27 @@
+.TH FACETIME-CLEAR-BADGE 1 "July 2025" "facetime-clear-badge 1.0" "User Commands"
+.SH NAME
+facetime-clear-badge \- clear the FaceTime.app notification badge
+.SH SYNOPSIS
+.B facetime-clear-badge
+.SH DESCRIPTION
+.B facetime-clear-badge
+is a script that clears the notification badge from the FaceTime application on macOS. It does this
+by programmatically switching between the first and second tabs in the FaceTime interface, which
+causes the badge to be cleared.
+.SH OPTIONS
+This utility does not accept any command-line options.
+.SH EXIT STATUS
+.TP
+0
+The badge was cleared successfully.
+.TP
+1
+An error occurred while attempting to clear the badge.
+.SH AUTHOR
+Written by the facetime-clear-badge contributors.
+.SH COPYRIGHT
+Copyright © 2025 facetime-clear-badge contributors.
+Licensed under the MIT License.
+.SH SEE ALSO
+.BR osascript (1)
+.BR
