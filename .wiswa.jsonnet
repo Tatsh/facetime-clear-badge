@@ -1,52 +1,26 @@
-(import 'defaults.libjsonnet') + {
-  local top = self,
-  // General settings
+local utils = import 'utils.libjsonnet';
+
+{
   project_type: 'typescript',
   keep_dist: true,
   want_man: true,
-
-  // Shared
-  github_username: 'Tatsh',
-  security_policy_supported_versions: { '0.0.x': ':white_check_mark:' },
-  authors: [
-    {
-      'family-names': 'Udvare',
-      'given-names': 'Andrew',
-      email: 'audvare@gmail.com',
-      name: '%s %s' % [self['given-names'], self['family-names']],
-    },
-  ],
   project_name: 'facetime-clear-badge',
   version: '0.0.4',
   description: 'Utility to clear the FaceTime.app badge.',
   keywords: ['applescript', 'facetime', 'jxa', 'macos', 'notifications', 'typescript'],
-  copilot: {
+  copilot+: {
     intro: 'facetime-clear-badge is a script to clear the FaceTime.app notification badge.',
   },
-  social+: {
-    mastodon+: { id: '109370961877277568' },
-  },
-
-  // GitHub
-  github+: {
-    funding+: {
-      ko_fi: 'tatsh2',
-      liberapay: 'tatsh2',
-      patreon: 'tatsh2',
-    },
-  },
-
   // TypeScript only
   package_json+: {
     bin: './dist/index.js',
     devDependencies+: {
-      '@types/node': '^24.0.10',
-      'jxa-lib': '^0.1.7',
-      'jxa-types': '^0.0.6',
-      'ts-loader': '^9.5.2',
-      'webpack-cli': '^6.0.1',
-      'webpack-shebang-plugin': '^1.1.8',
-      webpack: '^5.99.9',
+      'jxa-lib': utils.latestNpmPackageVersionCaret('jxa-lib'),
+      'jxa-types': utils.latestNpmPackageVersionCaret('jxa-types'),
+      'ts-loader': utils.latestNpmPackageVersionCaret('ts-loader'),
+      'webpack-cli': utils.latestNpmPackageVersionCaret('webpack-cli'),
+      'webpack-shebang-plugin': utils.latestNpmPackageVersionCaret('webpack-shebang-plugin'),
+      webpack: utils.latestNpmPackageVersionCaret('webpack'),
     },
     files+: ['dist/index.js', 'dist/index.js.map'],
     main: 'dist/index.js',
