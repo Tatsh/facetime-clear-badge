@@ -3,6 +3,7 @@
 *~
 .*.swp
 .*_cache/
+.DS_Store*
 .coverage
 .cspellcache
 .directory
@@ -10,8 +11,4 @@
 /.yarn/install-state.gz
 /build/
 /coverage/
-/docs/_build/
-/man/_static/
-__pycache__/
-htmlcov/
 node_modules/
