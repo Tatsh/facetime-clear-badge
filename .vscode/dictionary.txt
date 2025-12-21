@@ -9,6 +9,7 @@ facetime
 foxundermoon
 jsonnet
 jsonschema
+libera
 libjsonnet
 osascript
 schemafile
