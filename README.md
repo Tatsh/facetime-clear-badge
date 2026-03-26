@@ -1,6 +1,5 @@
 # facetime-clear-badge
 
-[![NPM Version](https://img.shields.io/npm/v/facetime-clear-badge)](https://www.npmjs.com/package/facetime-clear-badge)
 [![GitHub tag (with filter)](https://img.shields.io/github/v/tag/Tatsh/facetime-clear-badge)](https://github.com/Tatsh/facetime-clear-badge/tags)
 [![License](https://img.shields.io/github/license/Tatsh/facetime-clear-badge)](https://github.com/Tatsh/facetime-clear-badge/blob/master/LICENSE.txt)
 [![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/Tatsh/facetime-clear-badge/v0.0.4/master)](https://github.com/Tatsh/facetime-clear-badge/compare/v0.0.4...master)
@@ -9,10 +8,9 @@
 [![Tests](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/tests.yml/badge.svg)](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/tests.yml)
 [![Coverage Status](https://coveralls.io/repos/github/Tatsh/facetime-clear-badge/badge.svg?branch=master)](https://coveralls.io/github/Tatsh/facetime-clear-badge?branch=master)
 [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-blue?logo=dependabot)](https://github.com/dependabot)
-[![GitHub Pages](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/pages/pages-build-deployment/badge.svg)](https://tatsh.github.io/facetime-clear-badge/)
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit&logoColor=white)](https://github.com/pre-commit/pre-commit)
-[![NPM Downloads](https://img.shields.io/npm/dm/facetime-clear-badge)](https://www.npmjs.com/package/facetime-clear-badge)
+[![GitHub Pages](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/pages.yml/badge.svg)](https://tatsh.github.io/facetime-clear-badge/)
 [![Stargazers](https://img.shields.io/github/stars/Tatsh/facetime-clear-badge?logo=github&style=flat)](https://github.com/Tatsh/facetime-clear-badge/stargazers)
+[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://pre-commit.com/)
 [![Prettier](https://img.shields.io/badge/Prettier-enabled-black?logo=prettier)](https://prettier.io/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-black?logo=typescript)](https://www.typescriptlang.org/)
 [![Yarn](https://img.shields.io/badge/Yarn-4c335c?logo=yarn)](https://yarnpkg.com/)
