@@ -4,7 +4,6 @@ coveragerc
 coverallsapp
 dashcam
 docstrings
-dorny
 esbenp
 facetime
 foxundermoon

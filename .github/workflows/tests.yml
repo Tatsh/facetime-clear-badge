@@ -21,8 +21,28 @@ name: 'Tests'
   pull_request:
     branches:
       - 'master'
+    paths:
+      - '**/*.cjs'
+      - '**/*.js'
+      - '**/*.jsx'
+      - '**/*.mjs'
+      - '**/*.ts'
+      - '**/*.tsx'
+      - '.github/workflows/tests.yml'
+      - 'package.json'
+      - 'tsconfig.json'
   push:
     branches:
       - 'master'
+    paths:
+      - '**/*.cjs'
+      - '**/*.js'
+      - '**/*.jsx'
+      - '**/*.mjs'
+      - '**/*.ts'
+      - '**/*.tsx'
+      - '.github/workflows/tests.yml'
+      - 'package.json'
+      - 'tsconfig.json'
 permissions:
   contents: 'read'

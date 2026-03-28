@@ -22,13 +22,32 @@ jobs:
       matrix:
         language:
           - 'javascript-typescript'
+          - 'actions'
 name: 'CodeQL'
 'on':
   pull_request:
     branches:
       - 'master'
+    paths:
+      - '**/*.ts'
+      - '**/*.tsx'
+      - '**/*.js'
+      - '**/*.jsx'
+      - '.github/workflows/*.yml'
+      - '.github/workflows/*.yaml'
+      - '**/action.yml'
+      - '**/action.yaml'
   push:
     branches:
       - 'master'
+    paths:
+      - '**/*.ts'
+      - '**/*.tsx'
+      - '**/*.js'
+      - '**/*.jsx'
+      - '.github/workflows/*.yml'
+      - '.github/workflows/*.yaml'
+      - '**/action.yml'
+      - '**/action.yaml'
   schedule:
     - cron: '15 4 * * 3'

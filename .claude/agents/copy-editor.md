@@ -87,7 +87,7 @@ Do not edit:
    a. Read the file.
    b. Examine all prose (comments, string literals, Markdown body text, etc.).
    c. Apply fixes following the rules above.
-2. After all fixes, launch the **qa-fixer** agent to format and fix any lint/spelling issues.
+1. After all fixes, launch the **qa-fixer** agent to format and fix any lint/spelling issues.
 
 ## Rules
 

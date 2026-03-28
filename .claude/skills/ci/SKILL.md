@@ -34,8 +34,7 @@ If any changed files are under `src/`, run the following agents **in order**:
   with the relevant commit. **Only run when changes affect users**:
   files under `facetime_clear_badge/`, `src/`, or
   dependency/version changes in `package.json`. **Skip for**: workflows, CI config, `.claude/`,
-  `.cursor/`, `.github/instructions/`, documentation-only changes,
-  and other non-user-facing files.
+  `.cursor/`, `.github/instructions/`, documentation-only changes, and other non-user-facing files.
 
 ## Analysing changes
 
@@ -50,9 +49,8 @@ file in a commit:
 - `CHANGELOG.md`
 - `.vscode/dictionary.txt`
 
-For example, if a commit contains `facetime_clear_badge/src/index.ts`, and
-`CHANGELOG.md`, the component is determined by the source files only.
-`CHANGELOG.md` is simply staged alongside them.
+For example, if a commit contains `facetime_clear_badge/src/index.ts`, and `CHANGELOG.md`, the
+component is determined by the source files only. `CHANGELOG.md` is simply staged alongside them.
 
 If `CHANGELOG.md` is the only file being committed, use the `changelog:` prefix. If
 `.vscode/dictionary.txt` is the only file, use `dictionary:` prefix.
@@ -73,8 +71,8 @@ no hand-written code changed, this is a **cruft update**. Indicators:
 
 - Only Wiswa-managed files changed (workflows,
   `package.json`, `tsconfig.json`, `.pre-commit-config.yaml`, `.claude/agents/`,
-  `.cursor/rules/`, `.github/instructions/`, `CITATION.cff`,
-  `.vscode/dictionary.txt`, `.wiswa.jsonnet`, etc.).
+  `.cursor/rules/`, `.github/instructions/`, `CITATION.cff`, `.vscode/dictionary.txt`,
+  `.wiswa.jsonnet`, etc.).
 - No files under the primary module or `src/` changed.
 
 Commit everything in a single commit with the subject `cruft: update`. Include a body summarising
