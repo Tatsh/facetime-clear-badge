@@ -4,6 +4,7 @@ coveragerc
 coverallsapp
 dashcam
 docstrings
+elif
 esbenp
 facetime
 foxundermoon
@@ -21,6 +22,7 @@ schemafile
 shellcheck
 shellformat
 snapcraft
+softprops
 tatsh
 udvare
 vars
