@@ -10,7 +10,7 @@
 [![Tests](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/tests.yml/badge.svg)](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/tests.yml)
 [![Coverage Status](https://coveralls.io/repos/github/Tatsh/facetime-clear-badge/badge.svg?branch=master)](https://coveralls.io/github/Tatsh/facetime-clear-badge?branch=master)
 [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-blue?logo=dependabot)](https://github.com/dependabot)
-[![GitHub Pages](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/pages.yml/badge.svg)](https://tatsh.github.io/facetime-clear-badge/)
+[![pages-build-deployment](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/pages/pages-build-deployment/badge.svg)](https://tatsh.github.io/facetime-clear-badge/)
 [![Stargazers](https://img.shields.io/github/stars/Tatsh/facetime-clear-badge?logo=github&style=flat)](https://github.com/Tatsh/facetime-clear-badge/stargazers)
 [![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
 [![Prettier](https://img.shields.io/badge/Prettier-black?logo=prettier)](https://prettier.io/)
