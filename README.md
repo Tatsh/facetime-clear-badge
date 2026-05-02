@@ -6,7 +6,7 @@
 [![NPM Downloads](https://img.shields.io/npm/dm/facetime-clear-badge)](https://www.npmjs.com/package/facetime-clear-badge)
 [![GitHub tag (with filter)](https://img.shields.io/github/v/tag/Tatsh/facetime-clear-badge)](https://github.com/Tatsh/facetime-clear-badge/tags)
 [![License](https://img.shields.io/github/license/Tatsh/facetime-clear-badge)](https://github.com/Tatsh/facetime-clear-badge/blob/master/LICENSE.txt)
-[![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/Tatsh/facetime-clear-badge/v0.0.4/master)](https://github.com/Tatsh/facetime-clear-badge/compare/v0.0.4...master)
+[![GitHub commits since latest release (by SemVer including pre-releases)](https://img.shields.io/github/commits-since/Tatsh/facetime-clear-badge/v0.0.5/master)](https://github.com/Tatsh/facetime-clear-badge/compare/v0.0.5...master)
 [![CodeQL](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/codeql.yml/badge.svg)](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/codeql.yml)
 [![QA](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/qa.yml/badge.svg)](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/qa.yml)
 [![Tests](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/tests.yml/badge.svg)](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/tests.yml)

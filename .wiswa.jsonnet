@@ -6,7 +6,7 @@ local utils = import 'utils.libjsonnet';
   keep_dist: true,
   want_man: true,
   project_name: 'facetime-clear-badge',
-  version: '0.0.4',
+  version: '0.0.5',
   description: 'Utility to clear the FaceTime.app badge.',
   keywords: ['applescript', 'facetime', 'jxa', 'macos', 'notifications', 'typescript'],
   // TypeScript only
