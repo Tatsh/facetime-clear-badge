@@ -27,6 +27,11 @@ local utils = import 'utils.libjsonnet';
     main: 'dist/index.js',
   },
   eslint+: [{ rules: { '@typescript-eslint/no-unused-expressions': 'off' } }],
+  github+: {
+    workflows+: {
+      release_gate_workflows: ['Upload dist'],
+    },
+  },
   tsconfig+: {
     compilerOptions+: {
       // Pin to commonjs/node until ts-jest and typescript-eslint support TypeScript 6
