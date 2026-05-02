@@ -17,11 +17,13 @@ jobs:
         run: 'yarn'
       - name: 'Build'
         run: 'yarn tsc'
-      - name: 'Upload dist/index.js to draft release'
+      - name: 'Rename binary for release'
+        run: 'cp dist/index.js facetime-clear-badge'
+      - name: 'Upload facetime-clear-badge to draft release'
         uses: 'softprops/action-gh-release@v3.0.0'
         with:
           draft: true
-          files: 'dist/index.js'
+          files: 'facetime-clear-badge'
 name: 'Upload dist'
 'on':
   push:
