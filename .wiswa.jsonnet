@@ -27,6 +27,9 @@ local utils = import 'utils.libjsonnet';
   eslint+: [{ rules: { '@typescript-eslint/no-unused-expressions': 'off' } }],
   github+: {
     workflows+: {
+      publish_npm_any+: {
+        build_command: 'yarn webpack',
+      },
       release_gate_workflows: ['Upload dist'],
     },
   },
