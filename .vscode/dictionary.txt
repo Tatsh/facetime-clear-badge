@@ -29,12 +29,14 @@ shellcheck
 shellformat
 snapcraft
 softprops
+stdlib
 tatsh
 tostring
 udvare
 vars
 vendored
 venv
+vitest
 wiswa
 wiswa's
 yarnrc
