@@ -9,6 +9,18 @@ adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
 
+### Changed
+
+- Switched the test runner from Jest to Vitest. Removed `jest`, `ts-jest`, and `@types/jest`;
+  added `vitest` and `@vitest/coverage-v8`. The test imports from `vitest` and wraps the
+  module-level `global.ObjC` setup in `vi.hoisted(...)` so the SUT's `ObjC.import('stdlib')`
+  call sees the stub at module-load time. The dead `jest.mock('stdlib', ..., { virtual: true })`
+  call was removed: `'stdlib'` is a JXA framework name, not a JS module, so no module-level mock
+  is needed.
+- Upgraded TypeScript to the latest 6.x. Removed the temporary 5.x pin from `.wiswa.jsonnet` and
+  the `moduleResolution: 'node'` override in `tsconfig`.
+- Generated `Tests` workflow now runs `yarn vitest run --coverage`.
+
 ## [0.0.5] - 2026-05-02
 
 ### Changed

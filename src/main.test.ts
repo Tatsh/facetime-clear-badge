@@ -1,18 +1,19 @@
-import { beforeEach, describe, expect, it, jest } from '@jest/globals';
+import { beforeEach, describe, expect, it, type Mock, vi } from 'vitest';
 
-global.ObjC = {
-  ['import']: jest.fn(),
-} as unknown as typeof global.ObjC;
+vi.hoisted(() => {
+  global.ObjC = {
+    ['import']: vi.fn(),
+  } as unknown as typeof global.ObjC;
+});
+
 import main from './main';
 
-jest.mock('stdlib', () => ({}), { virtual: true });
+const activateMock = vi.fn();
+const quitMock = vi.fn();
+const clickMock = vi.fn();
+const delayMock = vi.fn();
 
-const activateMock = jest.fn();
-const quitMock = jest.fn();
-const clickMock = jest.fn();
-const delayMock = jest.fn();
-
-global.Application = jest.fn((name: string) => {
+global.Application = vi.fn((name: string) => {
   if (name === 'FaceTime') {
     return {
       activate: activateMock,
@@ -43,8 +44,8 @@ global.delay = delayMock as unknown as typeof global.delay;
 
 describe('main', () => {
   beforeEach(() => {
-    jest.clearAllMocks();
-    (global.Application as jest.Mock).mockClear();
+    vi.clearAllMocks();
+    (global.Application as Mock).mockClear();
     delayMock.mockClear();
     clickMock.mockClear();
     activateMock.mockClear();
