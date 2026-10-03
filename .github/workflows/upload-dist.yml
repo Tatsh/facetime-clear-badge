@@ -2,11 +2,11 @@ jobs:
   upload-dist:
     runs-on: 'ubuntu-latest'
     steps:
-      - uses: 'actions/checkout@v7.0.1'
+      - uses: 'actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1'
       - name: 'Rename binary for release'
         run: 'cp dist/index.js facetime-clear-badge'
       - name: 'Upload facetime-clear-badge to draft release'
-        uses: 'softprops/action-gh-release@v3.0.3'
+        uses: 'softprops/action-gh-release@efb35369e0ad2afab669f228072c1b0d510eae64'
         with:
           draft: true
           files: 'facetime-clear-badge'
