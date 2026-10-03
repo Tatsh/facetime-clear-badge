@@ -14,7 +14,7 @@
 [![Dependabot](https://img.shields.io/badge/Dependabot-enabled-blue?logo=dependabot)](https://github.com/dependabot)
 [![pages-build-deployment](https://github.com/Tatsh/facetime-clear-badge/actions/workflows/pages/pages-build-deployment/badge.svg)](https://tatsh.github.io/facetime-clear-badge/)
 [![Stargazers](https://img.shields.io/github/stars/Tatsh/facetime-clear-badge?logo=github&style=flat)](https://github.com/Tatsh/facetime-clear-badge/stargazers)
-[![pre-commit](https://img.shields.io/badge/pre--commit-enabled-brightgreen?logo=pre-commit)](https://github.com/pre-commit/pre-commit)
+[![pre-commit.ci status](https://results.pre-commit.ci/badge/github/Tatsh/facetime-clear-badge/master.svg)](https://results.pre-commit.ci/latest/github/Tatsh/facetime-clear-badge/master)
 [![Prettier](https://img.shields.io/badge/Prettier-black?logo=prettier)](https://prettier.io/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-black?logo=typescript)](https://www.typescriptlang.org/)
 [![Yarn](https://img.shields.io/badge/Yarn-4c335c?logo=yarn)](https://yarnpkg.com/)
